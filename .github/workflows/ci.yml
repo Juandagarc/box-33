@@ -103,7 +103,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7.0.0
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Check es.json and en.json carry the exact same key set
@@ -152,7 +152,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
@@ -168,7 +168,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
@@ -184,7 +184,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
@@ -207,7 +207,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
@@ -221,7 +221,7 @@ jobs:
     needs: web-build
     steps:
       - uses: actions/checkout@v7.0.0
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Run React Doctor (80/100 threshold)
@@ -256,7 +256,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
@@ -273,7 +273,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
@@ -289,7 +289,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
@@ -357,7 +357,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
@@ -618,7 +618,7 @@ jobs:
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
           version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v6.4.0
+      - uses: actions/setup-node@v6.5.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'pnpm'
