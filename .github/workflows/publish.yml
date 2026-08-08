@@ -42,10 +42,10 @@ jobs:
     outputs:
       digest: ${{ steps.push.outputs.digest }}
     steps:
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
 
       - name: Log in to ghcr.io
-        uses: docker/login-action@v4.4.0
+        uses: docker/login-action@v4.6.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
@@ -133,10 +133,10 @@ jobs:
     outputs:
       digest: ${{ steps.push.outputs.digest }}
     steps:
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
 
       - name: Log in to ghcr.io
-        uses: docker/login-action@v4.4.0
+        uses: docker/login-action@v4.6.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
@@ -230,7 +230,7 @@ jobs:
       packages: read # cosign verify pulls the image + signature from ghcr.io
     steps:
       - name: Log in to ghcr.io
-        uses: docker/login-action@v4.4.0
+        uses: docker/login-action@v4.6.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
@@ -295,7 +295,7 @@ jobs:
       packages: read # cosign verify pulls the image + signature from ghcr.io
     steps:
       - name: Log in to ghcr.io
-        uses: docker/login-action@v4.4.0
+        uses: docker/login-action@v4.6.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
